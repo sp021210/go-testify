@@ -26,7 +26,7 @@ func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 
 }
 
-func TestMainHandlerWhenCityIsNotSupported(t *testing.T) {
+func TestMainHandlerWhenCityNotSupported(t *testing.T) {
 
 	req := httptest.NewRequest("GET", "/cafe?count=4&city=moscow", nil) // здесь нужно создать запрос к сервису
 
